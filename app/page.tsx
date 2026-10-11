@@ -116,6 +116,12 @@ export default function Home() {
 
   return (
     <div className="site-wrapper">
+      <div style={{ background: '#141413', color: '#eae8e4', padding: '8px 4.5vw', fontSize: '10px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+        <span>WAKIKI — Versi 1 (Visual Cards)</span>
+        <a href="/v2" style={{ color: '#fff', textDecoration: 'underline', textUnderlineOffset: '3px' }}>
+          Lihat Versi 2 (Text-Based Editorial) →
+        </a>
+      </div>
       {/* HEADER / NAVIGATION */}
       <header className={`site-nav ${scrolled ? 'is-scrolled' : ''}`}>
         <div className="nav-left">

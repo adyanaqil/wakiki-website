@@ -1,0 +1,919 @@
+/* ==========================================================================
+   WAKIKI V2 — Text-Based Editorial Creative Portfolio
+   Design: Swiss Editorial / Minimal Luxury Studio Aesthetic
+   ========================================================================== */
+
+:root {
+  --v2-bg: #f4f3ef;
+  --v2-bg-alt: #eceae4;
+  --v2-bg-hover: #eeede7;
+  --v2-text-main: #141413;
+  --v2-text-muted: #54524d;
+  --v2-text-sub: #86837c;
+  --v2-border: #d4d1c9;
+  --v2-border-light: #e4e2da;
+  --v2-font-sans: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --v2-font-display: 'Space Grotesk', 'DM Sans', sans-serif;
+}
+
+.wakiki-v2-container {
+  background-color: var(--v2-bg);
+  color: var(--v2-text-main);
+  font-family: var(--v2-font-sans);
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Version Pill Banner */
+.v2-version-bar {
+  background: #111;
+  color: #fff;
+  padding: 8px 4.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.v2-version-bar a {
+  color: #aaa;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+.v2-version-bar a:hover {
+  color: #fff;
+}
+
+/* ==========================================================================
+   NAVIGATION
+   ========================================================================== */
+.v2-nav {
+  position: sticky;
+  top: 0;
+  z-index: 90;
+  background: rgba(244, 243, 239, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--v2-border);
+  height: 72px;
+  padding: 0 4.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.25s ease;
+}
+
+.v2-nav-logo {
+  font-family: var(--v2-font-display);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: var(--v2-text-main);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.v2-nav-logo span {
+  font-size: 9px;
+  margin-left: 2px;
+  position: relative;
+  top: 1px;
+}
+
+.v2-nav-links {
+  display: flex;
+  gap: 36px;
+}
+
+.v2-nav-links a {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--v2-text-main);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.v2-nav-links a:hover {
+  opacity: 0.55;
+}
+
+.v2-nav-aside {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.v2-nav-tagline {
+  font-size: 8px;
+  line-height: 1.35;
+  letter-spacing: 0.07em;
+  color: var(--v2-text-sub);
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.v2-menu-toggle {
+  display: none;
+  background: none;
+  border: 1px solid var(--v2-border);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+/* ==========================================================================
+   SECTION COMMON STYLES
+   ========================================================================== */
+.v2-section {
+  padding: 90px 4.5vw;
+  border-bottom: 1px solid var(--v2-border);
+}
+
+.v2-section-pad-lg {
+  padding-top: 120px;
+  padding-bottom: 130px;
+}
+
+.v2-section-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: baseline;
+  gap: 16px;
+  border-bottom: 1px solid var(--v2-border);
+  padding-bottom: 20px;
+  margin-bottom: 48px;
+}
+
+.v2-header-meta {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.v2-header-index {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--v2-text-sub);
+  letter-spacing: 0.06em;
+}
+
+.v2-header-title {
+  font-family: var(--v2-font-display);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--v2-text-main);
+  margin: 0;
+}
+
+.v2-header-aside {
+  grid-column: 3;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--v2-text-sub);
+}
+
+.v2-header-sub {
+  grid-column: 2 / span 2;
+  font-size: 13px;
+  color: var(--v2-text-muted);
+  margin: 6px 0 0 0;
+}
+
+/* Sub-category Header (e.g., 01 — Branding & Creative Direction) */
+.v2-category-label {
+  padding: 24px 0 16px 0;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--v2-border-light);
+}
+
+.v2-category-label h3 {
+  font-family: var(--v2-font-display);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--v2-text-muted);
+  margin: 0;
+}
+
+.v2-category-count {
+  font-size: 10px;
+  color: var(--v2-text-sub);
+  letter-spacing: 0.08em;
+}
+
+/* ==========================================================================
+   (01) HERO SECTION
+   ========================================================================== */
+.v2-hero {
+  min-height: 82vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 80px 4.5vw 60px;
+}
+
+.v2-hero-top {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.v2-hero-copy {
+  display: flex;
+  flex-direction: column;
+  padding-top: 12px;
+}
+
+.v2-hero-tag {
+  font-size: 11px;
+  color: var(--v2-text-sub);
+  letter-spacing: 0.06em;
+  margin-bottom: 24px;
+}
+
+.v2-hero-desc {
+  font-size: clamp(16px, 1.8vw, 22px);
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--v2-text-muted);
+  max-width: 420px;
+  margin: 0 0 36px 0;
+}
+
+.v2-hero-line {
+  width: 42px;
+  height: 1px;
+  background: var(--v2-text-main);
+  margin-bottom: 36px;
+}
+
+.v2-hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--v2-text-main);
+  text-decoration: none;
+  padding: 12px 0;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.v2-hero-cta span {
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+
+.v2-hero-cta:hover {
+  opacity: 0.7;
+  transform: translateX(4px);
+}
+
+.v2-hero-display {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.v2-hero-title {
+  font-family: var(--v2-font-display);
+  font-size: clamp(68px, 11vw, 168px);
+  font-weight: 700;
+  line-height: 0.78;
+  letter-spacing: -0.065em;
+  color: var(--v2-text-main);
+  margin: 0;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.v2-hero-title span {
+  display: block;
+}
+
+.v2-hero-title span:nth-child(2) {
+  margin-right: 2vw;
+}
+
+.v2-hero-title span:nth-child(3) {
+  margin-right: 0vw;
+}
+
+.v2-hero-title span:nth-child(4) {
+  margin-right: 4vw;
+}
+
+.v2-hero-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border-top: 1px solid var(--v2-border);
+  padding-top: 24px;
+  margin-top: 60px;
+}
+
+.v2-hero-meta-group {
+  display: flex;
+  gap: 48px;
+}
+
+.v2-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.v2-meta-label {
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--v2-text-sub);
+  text-transform: uppercase;
+}
+
+.v2-meta-val {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--v2-text-main);
+}
+
+/* ==========================================================================
+   (02, 04, 05, 06) EDITORIAL PROJECT LISTS
+   ========================================================================== */
+.v2-project-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.v2-project-row {
+  display: grid;
+  grid-template-columns: 60px 1.5fr 1.2fr 1.8fr;
+  align-items: baseline;
+  gap: 28px;
+  padding: 26px 12px;
+  border-bottom: 1px solid var(--v2-border);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.v2-project-row:hover {
+  background-color: var(--v2-bg-hover);
+}
+
+.v2-col-num {
+  font-size: 11px;
+  font-weight: 400;
+  color: var(--v2-text-sub);
+  letter-spacing: 0.06em;
+}
+
+.v2-col-client {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.v2-client-name {
+  font-family: var(--v2-font-display);
+  font-size: clamp(17px, 1.6vw, 22px);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: var(--v2-text-main);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.v2-client-meta {
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  color: var(--v2-text-sub);
+  text-transform: uppercase;
+}
+
+.v2-col-role {
+  display: flex;
+  align-items: baseline;
+}
+
+.v2-role-text {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--v2-text-muted);
+  line-height: 1.4;
+}
+
+.v2-col-desc {
+  display: flex;
+  align-items: baseline;
+}
+
+.v2-desc-text {
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--v2-text-muted);
+  margin: 0;
+}
+
+.v2-desc-empty {
+  color: var(--v2-border);
+  font-size: 12px;
+}
+
+/* ==========================================================================
+   (03) WHAT I DO SECTION
+   ========================================================================== */
+.v2-services-headline {
+  font-family: var(--v2-font-display);
+  font-size: clamp(24px, 3.2vw, 42px);
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  color: var(--v2-text-main);
+  margin: 0 0 48px 0;
+  text-transform: uppercase;
+}
+
+.v2-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid var(--v2-border);
+  border-bottom: 1px solid var(--v2-border);
+}
+
+.v2-service-col {
+  padding: 36px 28px 48px 24px;
+  border-right: 1px solid var(--v2-border);
+  display: flex;
+  flex-direction: column;
+}
+
+.v2-service-col:first-child {
+  padding-left: 0;
+}
+
+.v2-service-col:last-child {
+  border-right: none;
+}
+
+.v2-service-num {
+  font-size: 10px;
+  color: var(--v2-text-sub);
+  letter-spacing: 0.06em;
+  margin-bottom: 18px;
+}
+
+.v2-service-title {
+  font-family: var(--v2-font-display);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--v2-text-main);
+  margin: 0 0 24px 0;
+}
+
+.v2-service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.v2-service-list li {
+  font-size: 12.5px;
+  color: var(--v2-text-muted);
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+/* ==========================================================================
+   (07) THE JOURNEY SECTION
+   ========================================================================== */
+.v2-journey-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 36px;
+}
+
+.v2-journey-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.v2-journey-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.v2-journey-stage {
+  font-family: var(--v2-font-display);
+  font-size: clamp(26px, 3.2vw, 44px);
+  font-weight: 500;
+  letter-spacing: -0.04em;
+  color: var(--v2-text-main);
+  margin: 0;
+}
+
+.v2-journey-arrow {
+  flex-grow: 1;
+  height: 1px;
+  background-color: var(--v2-border);
+  position: relative;
+}
+
+.v2-journey-arrow::after {
+  content: '→';
+  position: absolute;
+  right: 0;
+  top: -8px;
+  font-size: 11px;
+  color: var(--v2-text-sub);
+}
+
+.v2-journey-desc {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--v2-text-sub);
+  margin: 0;
+}
+
+/* ==========================================================================
+   (08) APPROACH SECTION
+   ========================================================================== */
+.v2-approach-hero {
+  margin-bottom: 56px;
+}
+
+.v2-approach-headline {
+  font-family: var(--v2-font-display);
+  font-size: clamp(32px, 5.5vw, 76px);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.045em;
+  color: var(--v2-text-main);
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.v2-approach-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 36px;
+  border-top: 1px solid var(--v2-border);
+  padding-top: 40px;
+}
+
+.v2-approach-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.v2-approach-num {
+  font-size: 10px;
+  color: var(--v2-text-sub);
+  letter-spacing: 0.08em;
+  margin-bottom: 16px;
+}
+
+.v2-approach-pillar {
+  font-family: var(--v2-font-display);
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: var(--v2-text-main);
+  margin: 0 0 16px 0;
+}
+
+.v2-approach-prompt {
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--v2-text-muted);
+  margin: 0;
+  max-width: 280px;
+}
+
+/* ==========================================================================
+   (09) FINAL CONTACT CTA
+   ========================================================================== */
+.v2-contact-section {
+  padding: 110px 4.5vw 90px;
+  border-bottom: 1px solid var(--v2-border);
+}
+
+.v2-contact-grid {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 60px;
+  align-items: flex-end;
+}
+
+.v2-contact-headline {
+  font-family: var(--v2-font-display);
+  font-size: clamp(40px, 6.5vw, 92px);
+  font-weight: 700;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  color: var(--v2-text-main);
+  margin: 0 0 32px 0;
+  text-transform: uppercase;
+}
+
+.v2-contact-sub {
+  font-size: 15px;
+  color: var(--v2-text-muted);
+  margin: 0 0 40px 0;
+  max-width: 440px;
+  line-height: 1.45;
+}
+
+.v2-contact-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--v2-font-display);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--v2-bg);
+  background-color: var(--v2-text-main);
+  padding: 18px 36px;
+  text-decoration: none;
+  transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.v2-contact-cta-btn span {
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.v2-contact-cta-btn:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+}
+
+.v2-contact-cta-btn:hover span {
+  transform: translateX(4px);
+}
+
+.v2-contact-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding-bottom: 8px;
+}
+
+.v2-contact-channel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.v2-channel-label {
+  font-size: 9.5px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--v2-text-sub);
+}
+
+.v2-channel-val {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--v2-text-main);
+  text-decoration: none;
+}
+
+.v2-channel-val:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.v2-footer {
+  padding: 40px 4.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.v2-footer-left {
+  display: flex;
+  align-items: baseline;
+  gap: 24px;
+}
+
+.v2-footer-copy {
+  font-size: 10px;
+  color: var(--v2-text-sub);
+  letter-spacing: 0.04em;
+}
+
+.v2-footer-socials {
+  display: flex;
+  gap: 28px;
+}
+
+.v2-footer-socials a {
+  font-size: 9.5px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--v2-text-muted);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.v2-footer-socials a:hover {
+  color: var(--v2-text-main);
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .v2-project-row {
+    grid-template-columns: 50px 1.4fr 1.2fr 1.6fr;
+    gap: 20px;
+  }
+
+  .v2-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .v2-service-col:nth-child(2) {
+    border-right: none;
+  }
+
+  .v2-service-col:nth-child(3) {
+    padding-left: 0;
+    border-top: 1px solid var(--v2-border);
+  }
+
+  .v2-service-col:nth-child(4) {
+    border-top: 1px solid var(--v2-border);
+  }
+
+  .v2-journey-flow {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 36px;
+  }
+
+  .v2-approach-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .v2-contact-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .v2-nav-links {
+    display: none;
+  }
+
+  .v2-nav-links.is-open {
+    display: flex;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: var(--v2-bg);
+    flex-direction: column;
+    padding: 24px 4.5vw;
+    border-bottom: 1px solid var(--v2-border);
+    gap: 20px;
+  }
+
+  .v2-menu-toggle {
+    display: flex;
+  }
+
+  .v2-nav-tagline {
+    display: none;
+  }
+
+  .v2-hero-top {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .v2-hero-display {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .v2-hero-title span:nth-child(2),
+  .v2-hero-title span:nth-child(4) {
+    margin-right: 0;
+  }
+
+  .v2-hero-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .v2-hero-meta-group {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  /* Single Column Editorial Flow for Mobile */
+  .v2-project-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .v2-col-num {
+    margin-bottom: 2px;
+  }
+
+  .v2-col-role {
+    margin-top: 4px;
+  }
+
+  .v2-col-desc {
+    margin-top: 6px;
+  }
+
+  .v2-desc-empty {
+    display: none;
+  }
+
+  .v2-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .v2-service-col {
+    border-right: none;
+    border-bottom: 1px solid var(--v2-border);
+    padding: 28px 0;
+  }
+
+  .v2-service-col:first-child {
+    padding-top: 0;
+  }
+
+  .v2-service-col:last-child {
+    border-bottom: none;
+  }
+
+  .v2-journey-flow {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .v2-journey-arrow {
+    display: none;
+  }
+
+  .v2-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .v2-footer-socials {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
