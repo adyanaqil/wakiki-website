@@ -85,22 +85,22 @@ export const brandingProjects: ProjectEntry[] = [
 export const services: ServiceEntry[] = [
   {
     number: '01',
-    title: 'BRAND',
+    title: 'Brand',
     items: ['Strategy', 'Positioning', 'Identity'],
   },
   {
     number: '02',
-    title: 'CREATE',
+    title: 'Create',
     items: ['Campaign', 'Creative Direction', 'Art Direction'],
   },
   {
     number: '03',
-    title: 'PRODUCE',
+    title: 'Produce',
     items: ['TVC', 'Film', 'Photography', 'Content'],
   },
   {
     number: '04',
-    title: 'CONSULT',
+    title: 'Consult',
     items: ['Brand Development', 'Communication', 'Creative Solution'],
   },
 ]

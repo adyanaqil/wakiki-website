@@ -8,23 +8,23 @@ import { projects } from './data/projects'
 const services = [
   {
     num: '01',
-    title: 'BRAND',
-    items: ['STRATEGY', 'POSITIONING', 'IDENTITY'],
+    title: 'Brand',
+    items: ['Strategy', 'Positioning', 'Identity'],
   },
   {
     num: '02',
-    title: 'CREATE',
-    items: ['CAMPAIGN', 'CREATIVE DIRECTION', 'ART DIRECTION'],
+    title: 'Create',
+    items: ['Campaign', 'Creative Direction', 'Art Direction'],
   },
   {
     num: '03',
-    title: 'PRODUCE',
-    items: ['TVC', 'VIDEO', 'PHOTOGRAPHY', 'CONTENT'],
+    title: 'Produce',
+    items: ['TVC', 'Video', 'Photography', 'Content'],
   },
   {
     num: '04',
-    title: 'CONSULT',
-    items: ['BRAND DEVELOPMENT', 'COMMUNICATION', 'CREATIVE SOLUTION'],
+    title: 'Consult',
+    items: ['Brand Development', 'Communication', 'Creative Solution'],
   },
 ]
 
@@ -139,9 +139,9 @@ export default function Home() {
         <section id="top" className="hero-section">
           <div className="hero-left">
             <h1 className="hero-headline">
-              CREATIVE PARTNER<br />
-              FOR A BRIGHTER<br />
-              BRAND TOMORROW.
+              Creative partner<br />
+              for a brighter<br />
+              brand tomorrow.
             </h1>
             <div className="hero-short-line" />
             <div className="hero-cta-group">
@@ -152,8 +152,8 @@ export default function Home() {
                 </svg>
               </a>
               <a className="hero-explore-text" href="#work">
-                EXPLORE<br />
-                MY WORK
+                Explore<br />
+                my work
               </a>
             </div>
           </div>
@@ -350,9 +350,9 @@ export default function Home() {
           <div className="contact-content-inner">
             <div className="contact-left">
               <h2 className="contact-headline">
-                LET’S BUILD<br />
-                SOMETHING<br />
-                <span className="highlight-gray">MEANINGFUL.</span>
+                Let’s build<br />
+                something<br />
+                <span className="highlight-gray">meaningful.</span>
               </h2>
               <div className="contact-short-line" />
               <div className="contact-btn-group">
@@ -363,7 +363,7 @@ export default function Home() {
                   </svg>
                 </a>
                 <a className="contact-cta-text" href="mailto:hello@wakiki.id">
-                  GET IN TOUCH
+                  Get in touch
                 </a>
               </div>
             </div>
@@ -371,10 +371,10 @@ export default function Home() {
             <div className="contact-right-meta">
               <div className="meta-divider light" />
               <div className="meta-text light">
-                <span>IDEAS</span>
-                <span>VISUALS</span>
-                <span>STORIES</span>
-                <span>BRANDS</span>
+                <span>Ideas</span>
+                <span>Visuals</span>
+                <span>Stories</span>
+                <span>Brands</span>
               </div>
             </div>
           </div>
