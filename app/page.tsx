@@ -137,6 +137,15 @@ export default function Home() {
       <main>
         {/* HERO SECTION */}
         <section id="top" className="hero-section">
+          <div className="hero-bg-wrapper">
+            <img
+              src="/images/hero-bg.jpg"
+              alt="Sculptural paper background"
+              className="hero-bg-img"
+            />
+            <div className="hero-bg-overlay" />
+          </div>
+
           <div className="hero-left">
             <h1 className="hero-headline">
               Creative partner<br />
@@ -334,9 +343,9 @@ export default function Home() {
           <div className="contact-content-inner">
             <div className="contact-left">
               <h2 className="contact-headline">
-                Let’s build<br />
-                something<br />
-                <span className="highlight-gray">meaningful.</span>
+                WHERE PURPOSE<br />
+                BECOMES<br />
+                <span className="highlight-gray">PERCEPTION</span>
               </h2>
               <div className="contact-short-line" />
               <div className="contact-btn-group">
