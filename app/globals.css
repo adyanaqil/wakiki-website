@@ -404,23 +404,19 @@ button {
 
 .embossed-title {
   font-family: var(--font-display);
-  font-size: clamp(32px, 4.2vw, 68px);
+  font-size: clamp(20px, 2.4vw, 38px);
   font-weight: 700;
-  line-height: 0.86;
-  letter-spacing: -0.04em;
-  color: #f1f0ec;
+  line-height: 0.9;
+  letter-spacing: -0.03em;
+  color: #ffffff;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
   width: 100%;
   white-space: nowrap;
-  text-shadow: 
-    -1px -1px 0px rgba(255, 255, 255, 0.7),
-    1px 1px 2px rgba(0, 0, 0, 0.6),
-    3px 6px 16px rgba(0, 0, 0, 0.8),
-    6px 12px 28px rgba(0, 0, 0, 0.9);
-  filter: drop-shadow(0 4px 16px rgba(0, 0, 0, 0.7));
+  text-shadow: none;
+  filter: none;
 }
 
 .embossed-row {
@@ -874,11 +870,13 @@ button {
 
 .contact-headline {
   font-family: var(--font-display);
-  font-size: clamp(40px, 5.2vw, 76px);
-  font-weight: 400;
-  line-height: 0.88;
-  letter-spacing: -0.04em;
+  font-size: clamp(24px, 3.2vw, 48px);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.03em;
   color: #ffffff;
+  text-shadow: none;
+  filter: none;
 }
 
 .highlight-gray {
