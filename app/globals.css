@@ -186,6 +186,7 @@ button {
   font-weight: 600;
   letter-spacing: 0.08em;
   color: #111;
+  text-transform: uppercase;
 }
 
 .header-right {
@@ -222,6 +223,7 @@ button {
   font-weight: 400;
   letter-spacing: 0.06em;
   color: var(--text-muted);
+  text-transform: uppercase;
 }
 
 /* ==========================================
@@ -592,6 +594,10 @@ button {
 /* ==========================================
    (04) TRUSTED BY SECTION
 ========================================== */
+.trusted-work-grid {
+  margin-bottom: 56px;
+}
+
 .trusted-row {
   display: grid;
   align-items: center;

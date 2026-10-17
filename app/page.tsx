@@ -113,16 +113,16 @@ export default function Home() {
         </div>
 
         <nav className={`nav-center ${menuOpen ? 'is-open' : ''}`}>
-          <a href="#work" onClick={() => setMenuOpen(false)}>Work</a>
-          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+          <a href="#work" onClick={() => setMenuOpen(false)}>WORK</a>
+          <a href="#about" onClick={() => setMenuOpen(false)}>ABOUT</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>CONTACT</a>
         </nav>
 
         <div className="nav-right">
           <div className="nav-meta">
-            <span>Branding</span>
-            <span>Creative direction</span>
-            <span>Production</span>
+            <span>BRANDING</span>
+            <span>CREATIVE DIRECTION</span>
+            <span>PRODUCTION</span>
           </div>
           <button
             className="nav-circle-btn"
@@ -170,27 +170,25 @@ export default function Home() {
           <div className="hero-right-meta">
             <div className="meta-divider" />
             <div className="meta-text">
-              <span>Medan</span>
-              <span>Jakarta</span>
-              <span>Indonesia</span>
+              <span>MEDAN</span>
+              <span>JAKARTA</span>
+              <span>INDONESIA</span>
             </div>
           </div>
         </section>
 
-        {/* SELECTED WORK */}
-        <section id="work" className="section-block work-section">
+        {/* TRUSTED BY SECTION (PROJECT CARDS + CLIENT LOGOS) */}
+        <section id="work" className="section-block trusted-section">
           <div className="section-header">
             <div className="header-left">
-              <h2 className="section-title">Selected work</h2>
+              <h2 className="section-title">TRUSTED BY</h2>
             </div>
             <div className="header-right">
-              <a href="#contact" className="view-all-link">
-                View all <span className="header-circle-icon" />
-              </a>
+              <span className="header-circle-icon" />
             </div>
           </div>
 
-          <div className="work-grid">
+          <div className="work-grid trusted-work-grid">
             {projects.map((project) => (
               <Link
                 href={`/work/${project.slug}`}
@@ -215,7 +213,6 @@ export default function Home() {
                 <div className="card-overlay">
                   <div className="card-title-row">
                     <h3 className="card-title">{project.name}</h3>
-                    <span className="card-arrow-icon" aria-hidden="true">↗</span>
                   </div>
                   <div className="card-types">
                     {project.types.map((t, idx) => (
@@ -225,49 +222,10 @@ export default function Home() {
                   <div className="card-number-row">
                     <span className="card-num">{project.number}</span>
                     <span className="card-num-line" />
-                    <span className="card-view-text">View project</span>
                   </div>
                 </div>
               </Link>
             ))}
-          </div>
-        </section>
-
-        {/* WHAT I DO */}
-        <section id="about" className="section-block services-section">
-          <div className="section-header">
-            <div className="header-left">
-              <h2 className="section-title">What I do</h2>
-            </div>
-            <div className="header-right">
-              <span className="section-subtitle">From idea to execution</span>
-            </div>
-          </div>
-
-          <div className="services-grid">
-            {services.map((srv) => (
-              <div className="service-col" key={srv.num}>
-                <span className="service-index">{srv.num}</span>
-                <h3 className="service-title">{srv.title}</h3>
-                <ul className="service-list">
-                  {srv.items.map((item, idx) => (
-                    <li key={idx}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        {/* TRUSTED BY */}
-        <section className="section-block trusted-section">
-          <div className="section-header">
-            <div className="header-left">
-              <h2 className="section-title">Trusted by</h2>
-            </div>
-            <div className="header-right">
-              <span className="header-circle-icon" />
-            </div>
           </div>
 
           {/* Row 1: Editorial & International Publications */}
@@ -309,14 +267,40 @@ export default function Home() {
           </div>
         </section>
 
+        {/* WHAT I DO */}
+        <section id="about" className="section-block services-section">
+          <div className="section-header">
+            <div className="header-left">
+              <h2 className="section-title">WHAT I DO</h2>
+            </div>
+            <div className="header-right">
+              <span className="section-subtitle">FROM IDEA TO EXECUTION</span>
+            </div>
+          </div>
+
+          <div className="services-grid">
+            {services.map((srv) => (
+              <div className="service-col" key={srv.num}>
+                <span className="service-index">{srv.num}</span>
+                <h3 className="service-title">{srv.title}</h3>
+                <ul className="service-list">
+                  {srv.items.map((item, idx) => (
+                    <li key={idx}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* THE JOURNEY */}
         <section className="section-block journey-section">
           <div className="section-header">
             <div className="header-left">
-              <h2 className="section-title">The journey</h2>
+              <h2 className="section-title">THE JOURNEY</h2>
             </div>
             <div className="header-right">
-              <span className="section-subtitle">Experience shapes perspective</span>
+              <span className="section-subtitle">EXPERIENCE SHAPES PERSPECTIVE</span>
             </div>
           </div>
 
@@ -390,10 +374,10 @@ export default function Home() {
           <span className="footer-copy">© 2026 Wakiki. All rights reserved.</span>
         </div>
         <div className="footer-links">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://behance.net" target="_blank" rel="noopener noreferrer">Behance</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+          <a href="https://behance.net" target="_blank" rel="noopener noreferrer">BEHANCE</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+          <a href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
         </div>
       </footer>
     </div>
