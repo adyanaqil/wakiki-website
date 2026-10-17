@@ -161,8 +161,8 @@ export default function Home() {
                 </svg>
               </a>
               <a className="hero-explore-text" href="#work">
-                Explore<br />
-                my work
+                EXPLORE<br />
+                MY WORK
               </a>
             </div>
           </div>
