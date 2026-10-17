@@ -1,27 +1,9 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { projects } from './data/projects'
 
-const projects = [
-  {
-    number: '01',
-    name: 'Dimsum Qoqom',
-    types: ['BRANDING', 'CREATIVE DIRECTION', 'COMPANY PROFILE'],
-    image: '/images/dimsum.jpg',
-  },
-  {
-    number: '02',
-    name: 'Sushi Catering',
-    types: ['BRANDING', 'CAMPAIGN', 'TVC'],
-    image: '/images/sushi.jpg',
-  },
-  {
-    number: '03',
-    name: 'A3 Golf Gallery',
-    types: ['BRANDING', 'CREATIVE DIRECTION'],
-    image: '/images/golf.jpg',
-  },
-]
 
 const services = [
   {
@@ -179,10 +161,10 @@ export default function Home() {
 
           <div className="hero-center-3d">
             <div className="embossed-title">
-              <div className="embossed-row row-the">THE</div>
-              <div className="embossed-row row-new">NEW</div>
-              <div className="embossed-row row-design">DESIGN</div>
-              <div className="embossed-row row-age">AGE</div>
+              <div className="embossed-row row-where">WHERE</div>
+              <div className="embossed-row row-purpose">PURPOSE</div>
+              <div className="embossed-row row-becomes">BECOMES</div>
+              <div className="embossed-row row-perception">PERCEPTION</div>
             </div>
           </div>
 
@@ -212,7 +194,12 @@ export default function Home() {
 
           <div className="work-grid">
             {projects.map((project) => (
-              <article className="work-card" key={project.number}>
+              <Link
+                href={`/work/${project.slug}`}
+                className="work-card"
+                key={project.number}
+                aria-label={`View project: ${project.name}`}
+              >
                 <div className="card-media">
                   {project.image ? (
                     <img
@@ -228,7 +215,10 @@ export default function Home() {
                   <div className="card-media-fallback" />
                 </div>
                 <div className="card-overlay">
-                  <h3 className="card-title">{project.name}</h3>
+                  <div className="card-title-row">
+                    <h3 className="card-title">{project.name}</h3>
+                    <span className="card-arrow-icon" aria-hidden="true">↗</span>
+                  </div>
                   <div className="card-types">
                     {project.types.map((t, idx) => (
                       <span key={idx}>{t}</span>
@@ -237,9 +227,10 @@ export default function Home() {
                   <div className="card-number-row">
                     <span className="card-num">{project.number}</span>
                     <span className="card-num-line" />
+                    <span className="card-view-text">VIEW PROJECT</span>
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
         </section>

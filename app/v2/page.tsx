@@ -80,12 +80,12 @@ export default function V2Page() {
               </a>
             </div>
 
-            <div className="v2-hero-display" aria-label="The New Design Age">
+            <div className="v2-hero-display" aria-label="Where Purpose Becomes Perception">
               <h1 className="v2-hero-title">
-                <span>THE</span>
-                <span>NEW</span>
-                <span>DESIGN</span>
-                <span>AGE</span>
+                <span>WHERE</span>
+                <span>PURPOSE</span>
+                <span>BECOMES</span>
+                <span>PERCEPTION</span>
               </h1>
             </div>
           </div>
