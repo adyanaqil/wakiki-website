@@ -395,7 +395,11 @@ button {
 .hero-center-3d {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+  align-items: flex-end;
+  align-self: flex-start;
+  grid-column: 2 / 4;
+  grid-row: 1;
+  padding-top: 16px;
   width: 100%;
   user-select: none;
   z-index: 2;
@@ -404,10 +408,10 @@ button {
 
 .embossed-title {
   font-family: var(--font-display);
-  font-size: clamp(20px, 2.4vw, 38px);
+  font-size: clamp(26px, 3.2vw, 50px);
   font-weight: 700;
-  line-height: 0.9;
-  letter-spacing: -0.03em;
+  line-height: 0.88;
+  letter-spacing: -0.035em;
   color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -963,6 +967,14 @@ button {
 
   .hero-right-meta {
     justify-content: flex-start;
+  }
+
+  .hero-center-3d {
+    grid-column: 1;
+    grid-row: auto;
+    align-self: auto;
+    padding-top: 0;
+    justify-content: center;
   }
 
   .embossed-title {
