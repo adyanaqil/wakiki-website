@@ -135,10 +135,9 @@ export default function Home() {
       </header>
 
       <main>
-        {/* (01) HERO SECTION */}
+        {/* HERO SECTION */}
         <section id="top" className="hero-section">
           <div className="hero-left">
-            <div className="section-index">(01)</div>
             <h1 className="hero-headline">
               CREATIVE PARTNER<br />
               FOR A BRIGHTER<br />
@@ -178,11 +177,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* (02) SELECTED WORK */}
+        {/* SELECTED WORK */}
         <section id="work" className="section-block work-section">
           <div className="section-header">
             <div className="header-left">
-              <span className="section-tag">(02)</span>
               <h2 className="section-title">SELECTED WORK</h2>
             </div>
             <div className="header-right">
@@ -235,11 +233,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* (03) WHAT I DO */}
+        {/* WHAT I DO */}
         <section id="about" className="section-block services-section">
           <div className="section-header">
             <div className="header-left">
-              <span className="section-tag">(03)</span>
               <h2 className="section-title">WHAT I DO</h2>
             </div>
             <div className="header-right">
@@ -262,11 +259,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* (04) TRUSTED BY */}
+        {/* TRUSTED BY */}
         <section className="section-block trusted-section">
           <div className="section-header">
             <div className="header-left">
-              <span className="section-tag">(04)</span>
               <h2 className="section-title">TRUSTED BY</h2>
             </div>
             <div className="header-right">
@@ -313,11 +309,10 @@ export default function Home() {
           </div>
         </section>
 
-        {/* (05) THE JOURNEY */}
+        {/* THE JOURNEY */}
         <section className="section-block journey-section">
           <div className="section-header">
             <div className="header-left">
-              <span className="section-tag">(05)</span>
               <h2 className="section-title">THE JOURNEY</h2>
             </div>
             <div className="header-right">
@@ -338,12 +333,12 @@ export default function Home() {
           </div>
         </section>
 
-        {/* (06) CONTACT / CTA BANNER */}
+        {/* CONTACT / CTA BANNER */}
         <section id="contact" className="contact-banner-section">
           <div className="contact-bg-wrapper">
             <img
-              src="/images/contact.jpg"
-              alt="Atmospheric light"
+              src="/images/banner.png"
+              alt="Liquid chrome sculpture"
               className="contact-bg-img"
               onError={(e) => {
                 e.currentTarget.style.display = 'none'
@@ -354,7 +349,6 @@ export default function Home() {
 
           <div className="contact-content-inner">
             <div className="contact-left">
-              <span className="contact-index">(06)</span>
               <h2 className="contact-headline">
                 LET’S BUILD<br />
                 SOMETHING<br />
