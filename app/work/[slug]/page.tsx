@@ -52,13 +52,13 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
         <nav className="nav-center">
           <Link href="/#work" className="nav-back-link">
-            ← BACK TO SELECTED WORK
+            ← Back to selected work
           </Link>
         </nav>
 
         <div className="nav-right">
           <div className="nav-meta">
-            <span>SELECTED WORK</span>
+            <span>Selected work</span>
             <span>WAKIKI®</span>
           </div>
           <Link href="/#work" className="nav-circle-btn" aria-label="Back to selected work">
@@ -71,11 +71,11 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         {/* HERO TITLE SECTION */}
         <section className="project-hero-section">
           <div className="project-breadcrumb">
-            <Link href="/" className="crumb-link">HOME</Link>
+            <Link href="/" className="crumb-link">Home</Link>
             <span className="crumb-sep">/</span>
-            <Link href="/#work" className="crumb-link">SELECTED WORK</Link>
+            <Link href="/#work" className="crumb-link">Selected work</Link>
             <span className="crumb-sep">/</span>
-            <span className="crumb-current">{project.name.toUpperCase()}</span>
+            <span className="crumb-current">{project.name}</span>
           </div>
 
           <div className="project-hero-top-row">
@@ -115,19 +115,19 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <section className="project-specs-section">
           <div className="project-specs-grid">
             <div className="spec-col">
-              <span className="spec-label">CLIENT</span>
+              <span className="spec-label">Client</span>
               <span className="spec-value">{project.client}</span>
             </div>
             <div className="spec-col">
-              <span className="spec-label">ROLE</span>
+              <span className="spec-label">Role</span>
               <span className="spec-value">{project.role}</span>
             </div>
             <div className="spec-col">
-              <span className="spec-label">LOCATION</span>
+              <span className="spec-label">Location</span>
               <span className="spec-value">{project.location}</span>
             </div>
             <div className="spec-col">
-              <span className="spec-label">SERVICES</span>
+              <span className="spec-label">Services</span>
               <div className="spec-tags-list">
                 {project.types.map((t, idx) => (
                   <span key={idx} className="spec-tag">{t}</span>
@@ -143,7 +143,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             {/* Left Sidebar: Deliverables & Highlight */}
             <aside className="editorial-sidebar">
               <div className="sidebar-block">
-                <span className="sidebar-heading">KEY DELIVERABLES</span>
+                <span className="sidebar-heading">Key deliverables</span>
                 <ul className="deliverables-list">
                   {project.deliverables.map((item, idx) => (
                     <li key={idx}>
@@ -169,7 +169,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
             <div className="editorial-content-body">
               {/* Executive Summary */}
               <article className="story-block">
-                <span className="story-subtag">01. EXECUTIVE SUMMARY</span>
+                <span className="story-subtag">Executive summary</span>
                 <h2 className="story-title">Gambaran Umum Proyek</h2>
                 <p className="story-paragraph highlight-paragraph">{project.summary}</p>
                 <p className="story-paragraph">{project.overview}</p>
@@ -177,21 +177,21 @@ export default async function ProjectDetailPage({ params }: PageProps) {
 
               {/* The Challenge */}
               <article className="story-block">
-                <span className="story-subtag">02. THE CHALLENGE</span>
+                <span className="story-subtag">The challenge</span>
                 <h2 className="story-title">Tantangan &amp; Peluang Brand</h2>
                 <p className="story-paragraph">{project.challenge}</p>
               </article>
 
               {/* The Creative Direction & Approach */}
               <article className="story-block">
-                <span className="story-subtag">03. CREATIVE DIRECTION</span>
+                <span className="story-subtag">Creative direction</span>
                 <h2 className="story-title">Pendekatan &amp; Konsep Kreatif</h2>
                 <p className="story-paragraph">{project.approach}</p>
               </article>
 
               {/* The Outcome & Impact */}
               <article className="story-block">
-                <span className="story-subtag">04. IMPACT &amp; RESULTS</span>
+                <span className="story-subtag">Impact &amp; results</span>
                 <h2 className="story-title">Hasil &amp; Dampak Bisnis</h2>
                 <p className="story-paragraph">{project.result}</p>
               </article>
@@ -203,18 +203,18 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <section className="project-pagination-section">
           <div className="pagination-grid">
             <Link href={`/work/${prev.slug}`} className="pagination-card prev-card">
-              <span className="pagination-direction">← PREVIOUS PROJECT</span>
+              <span className="pagination-direction">← Previous project</span>
               <h3 className="pagination-project-name">{prev.name}</h3>
               <span className="pagination-meta">{prev.category}</span>
             </Link>
 
             <Link href="/#work" className="pagination-overview-link">
               <span className="overview-icon" />
-              <span>VIEW ALL WORK</span>
+              <span>View all work</span>
             </Link>
 
             <Link href={`/work/${next.slug}`} className="pagination-card next-card">
-              <span className="pagination-direction">NEXT PROJECT →</span>
+              <span className="pagination-direction">Next project →</span>
               <h3 className="pagination-project-name">{next.name}</h3>
               <span className="pagination-meta">{next.category}</span>
             </Link>
@@ -225,13 +225,13 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <section className="project-contact-cta">
           <div className="contact-cta-inner">
             <div>
-              <span className="cta-index">COLLABORATION</span>
+              <span className="cta-index">Collaboration</span>
               <h2 className="cta-heading">
-                HAVE A SIMILAR VISION FOR YOUR BRAND?
+                Have a similar vision for your brand?
               </h2>
             </div>
             <a href="mailto:hello@wakiki.id" className="cta-button">
-              START A PROJECT
+              Start a project
               <span className="cta-arrow">→</span>
             </a>
           </div>
@@ -247,10 +247,10 @@ export default async function ProjectDetailPage({ params }: PageProps) {
           <span className="footer-copy">© 2026 Wakiki. All rights reserved.</span>
         </div>
         <div className="footer-links">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
-          <a href="https://behance.net" target="_blank" rel="noopener noreferrer">BEHANCE</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-          <a href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://behance.net" target="_blank" rel="noopener noreferrer">Behance</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </div>
       </footer>
     </div>

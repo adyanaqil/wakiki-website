@@ -14,7 +14,7 @@ const services = [
   {
     num: '02',
     title: 'Create',
-    items: ['Campaign', 'Creative Direction', 'Art Direction'],
+    items: ['Campaign', 'Creative direction', 'Art direction'],
   },
   {
     num: '03',
@@ -24,7 +24,7 @@ const services = [
   {
     num: '04',
     title: 'Consult',
-    items: ['Brand Development', 'Communication', 'Creative Solution'],
+    items: ['Brand development', 'Communication', 'Creative solution'],
   },
 ]
 
@@ -80,10 +80,10 @@ const brandClients = [
 ]
 
 const journeySteps = [
-  { title: 'DESIGN', desc: 'VISUAL COMMUNICATION' },
-  { title: 'PHOTO', desc: 'REAL STORIES' },
-  { title: 'FILM', desc: 'MOVING IDEAS' },
-  { title: 'BRANDS', desc: 'LASTING IMPACT' },
+  { title: 'Design', desc: 'Visual communication' },
+  { title: 'Photo', desc: 'Real stories' },
+  { title: 'Film', desc: 'Moving ideas' },
+  { title: 'Brands', desc: 'Lasting impact' },
 ]
 
 export default function Home() {
@@ -113,16 +113,16 @@ export default function Home() {
         </div>
 
         <nav className={`nav-center ${menuOpen ? 'is-open' : ''}`}>
-          <a href="#work" onClick={() => setMenuOpen(false)}>WORK</a>
-          <a href="#about" onClick={() => setMenuOpen(false)}>ABOUT</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>CONTACT</a>
+          <a href="#work" onClick={() => setMenuOpen(false)}>Work</a>
+          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+          <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
         </nav>
 
         <div className="nav-right">
           <div className="nav-meta">
-            <span>BRANDING</span>
-            <span>CREATIVE DIRECTION</span>
-            <span>PRODUCTION</span>
+            <span>Branding</span>
+            <span>Creative direction</span>
+            <span>Production</span>
           </div>
           <button
             className="nav-circle-btn"
@@ -170,9 +170,9 @@ export default function Home() {
           <div className="hero-right-meta">
             <div className="meta-divider" />
             <div className="meta-text">
-              <span>MEDAN</span>
-              <span>JAKARTA</span>
-              <span>INDONESIA</span>
+              <span>Medan</span>
+              <span>Jakarta</span>
+              <span>Indonesia</span>
             </div>
           </div>
         </section>
@@ -181,11 +181,11 @@ export default function Home() {
         <section id="work" className="section-block work-section">
           <div className="section-header">
             <div className="header-left">
-              <h2 className="section-title">SELECTED WORK</h2>
+              <h2 className="section-title">Selected work</h2>
             </div>
             <div className="header-right">
               <a href="#contact" className="view-all-link">
-                VIEW ALL <span className="header-circle-icon" />
+                View all <span className="header-circle-icon" />
               </a>
             </div>
           </div>
@@ -225,7 +225,7 @@ export default function Home() {
                   <div className="card-number-row">
                     <span className="card-num">{project.number}</span>
                     <span className="card-num-line" />
-                    <span className="card-view-text">VIEW PROJECT</span>
+                    <span className="card-view-text">View project</span>
                   </div>
                 </div>
               </Link>
@@ -237,10 +237,10 @@ export default function Home() {
         <section id="about" className="section-block services-section">
           <div className="section-header">
             <div className="header-left">
-              <h2 className="section-title">WHAT I DO</h2>
+              <h2 className="section-title">What I do</h2>
             </div>
             <div className="header-right">
-              <span className="section-subtitle">FROM IDEA TO EXECUTION</span>
+              <span className="section-subtitle">From idea to execution</span>
             </div>
           </div>
 
@@ -263,7 +263,7 @@ export default function Home() {
         <section className="section-block trusted-section">
           <div className="section-header">
             <div className="header-left">
-              <h2 className="section-title">TRUSTED BY</h2>
+              <h2 className="section-title">Trusted by</h2>
             </div>
             <div className="header-right">
               <span className="header-circle-icon" />
@@ -313,10 +313,10 @@ export default function Home() {
         <section className="section-block journey-section">
           <div className="section-header">
             <div className="header-left">
-              <h2 className="section-title">THE JOURNEY</h2>
+              <h2 className="section-title">The journey</h2>
             </div>
             <div className="header-right">
-              <span className="section-subtitle">EXPERIENCE SHAPES PERSPECTIVE</span>
+              <span className="section-subtitle">Experience shapes perspective</span>
             </div>
           </div>
 
@@ -390,10 +390,10 @@ export default function Home() {
           <span className="footer-copy">© 2026 Wakiki. All rights reserved.</span>
         </div>
         <div className="footer-links">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
-          <a href="https://behance.net" target="_blank" rel="noopener noreferrer">BEHANCE</a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-          <a href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://behance.net" target="_blank" rel="noopener noreferrer">Behance</a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         </div>
       </footer>
     </div>

@@ -33,7 +33,7 @@ export const projects: Project[] = [
     location: 'Medan, Indonesia',
     year: '2024',
     role: 'Branding Consultant · Creative Director',
-    types: ['BRANDING', 'CREATIVE DIRECTION', 'COMPANY PROFILE'],
+    types: ['Branding', 'Creative direction', 'Company profile'],
     deliverables: [
       'Brand Strategy & Positioning',
       'Visual Identity Direction',
@@ -67,7 +67,7 @@ export const projects: Project[] = [
     location: 'Medan, Indonesia',
     year: '2023 - 2024',
     role: 'Branding Consultant · Creative Director',
-    types: ['BRANDING', 'CAMPAIGN', 'TVC'],
+    types: ['Branding', 'Campaign', 'TVC'],
     deliverables: [
       'Creative Campaign Concept',
       'TV Commercial (TVC) Direction',
@@ -101,7 +101,7 @@ export const projects: Project[] = [
     location: 'Jakarta, Indonesia',
     year: '2023',
     role: 'Branding Consultant · Creative Director',
-    types: ['BRANDING', 'CREATIVE DIRECTION'],
+    types: ['Branding', 'Creative direction'],
     deliverables: [
       'Brand Strategy & Positioning',
       'Creative Concept Direction',

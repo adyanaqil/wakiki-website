@@ -1072,7 +1072,6 @@ button {
   letter-spacing: -0.04em;
   line-height: 0.95;
   color: #111;
-  text-transform: uppercase;
 }
 
 .project-category-tag {
@@ -1148,7 +1147,6 @@ button {
   color: #fff;
   font-size: 9px;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   z-index: 2;
 }
 
@@ -1299,7 +1297,6 @@ button {
   font-style: normal;
   letter-spacing: 0.08em;
   color: var(--text-muted);
-  text-transform: uppercase;
   display: block;
 }
 
