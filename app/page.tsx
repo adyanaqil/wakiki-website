@@ -146,13 +146,27 @@ export default function Home() {
             <div className="hero-bg-overlay" />
           </div>
 
-          <div className="hero-left">
-            <h1 className="hero-headline">
-              Creative partner<br />
-              for a brighter<br />
-              brand tomorrow.
-            </h1>
-            <div className="hero-short-line" />
+          <div className="hero-top-row">
+            <div className="hero-left">
+              <h1 className="hero-headline">
+                Creative partner<br />
+                for a brighter<br />
+                brand tomorrow.
+              </h1>
+              <div className="hero-short-line" />
+            </div>
+
+            <div className="hero-right-title">
+              <div className="embossed-title">
+                <div className="embossed-row row-where">WHERE</div>
+                <div className="embossed-row row-purpose">PURPOSE</div>
+                <div className="embossed-row row-becomes">BECOMES</div>
+                <div className="embossed-row row-perception">PERCEPTION</div>
+              </div>
+            </div>
+          </div>
+
+          <div className="hero-bottom-row">
             <div className="hero-cta-group">
               <a className="circle-arrow-btn" href="#work">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
@@ -165,23 +179,14 @@ export default function Home() {
                 MY WORK
               </a>
             </div>
-          </div>
 
-          <div className="hero-center-3d">
-            <div className="embossed-title">
-              <div className="embossed-row row-where">WHERE</div>
-              <div className="embossed-row row-purpose">PURPOSE</div>
-              <div className="embossed-row row-becomes">BECOMES</div>
-              <div className="embossed-row row-perception">PERCEPTION</div>
-            </div>
-          </div>
-
-          <div className="hero-right-meta">
-            <div className="meta-divider" />
-            <div className="meta-text">
-              <span>MEDAN</span>
-              <span>JAKARTA</span>
-              <span>INDONESIA</span>
+            <div className="hero-right-meta">
+              <div className="meta-divider" />
+              <div className="meta-text">
+                <span>MEDAN</span>
+                <span>JAKARTA</span>
+                <span>INDONESIA</span>
+              </div>
             </div>
           </div>
         </section>
@@ -331,7 +336,7 @@ export default function Home() {
           <div className="contact-bg-wrapper">
             <img
               src="/images/banner.png"
-              alt="Liquid chrome sculpture"
+              alt="Sculptural concrete architecture"
               className="contact-bg-img"
               onError={(e) => {
                 e.currentTarget.style.display = 'none'

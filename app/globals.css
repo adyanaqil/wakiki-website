@@ -260,12 +260,12 @@ button {
    (01) HERO SECTION
 ========================================== */
 .hero-section {
-  padding: 120px 4.5vw 60px;
+  padding: 120px 4.5vw 36px;
   min-height: 88vh;
   position: relative;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #0b0b0b;
   overflow: hidden;
 }
@@ -296,13 +296,20 @@ button {
   pointer-events: none;
 }
 
+.hero-top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  gap: 32px;
+}
+
 .hero-left {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  align-self: stretch;
-  padding-bottom: 20px;
+  max-width: 340px;
   z-index: 2;
   position: relative;
 }
@@ -326,14 +333,24 @@ button {
   width: 32px;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.45);
-  margin: 28px 0 auto;
+  margin: 24px 0 0;
+}
+
+.hero-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+  z-index: 2;
+  position: relative;
+  margin-top: auto;
+  padding-top: 40px;
 }
 
 .hero-cta-group {
   display: flex;
   align-items: center;
   gap: 16px;
-  margin-top: auto;
 }
 
 .hero-section .circle-arrow-btn {
@@ -393,24 +410,21 @@ button {
   color: #fff;
 }
 
-/* 3D Embossed Typography */
+/* Hero Top-Right Display Title */
+.hero-right-title,
 .hero-center-3d {
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
-  align-self: flex-start;
-  grid-column: 2 / 4;
-  grid-row: 1;
-  padding-top: 16px;
-  width: 100%;
+  align-items: flex-start;
   user-select: none;
   z-index: 2;
   position: relative;
+  margin-left: auto;
 }
 
 .embossed-title {
   font-family: var(--font-display);
-  font-size: clamp(26px, 3.2vw, 50px);
+  font-size: clamp(28px, 3.4vw, 54px);
   font-weight: 700;
   line-height: 0.88;
   letter-spacing: -0.035em;
@@ -443,9 +457,7 @@ button {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  height: 100%;
   gap: 12px;
-  padding-bottom: 20px;
   z-index: 2;
   position: relative;
 }
@@ -961,32 +973,48 @@ button {
 ========================================== */
 @media (max-width: 900px) {
   .hero-section {
-    grid-template-columns: 1fr;
-    gap: 40px;
     min-height: auto;
     padding-top: 100px;
+    gap: 40px;
   }
 
-  .hero-right-meta {
-    justify-content: flex-start;
+  .hero-top-row {
+    flex-direction: column;
+    gap: 32px;
   }
 
+  .hero-right-title,
   .hero-center-3d {
-    grid-column: 1;
-    grid-row: auto;
-    align-self: auto;
-    padding-top: 0;
-    justify-content: center;
+    margin-left: 0;
+    justify-content: flex-start;
+    width: 100%;
   }
 
   .embossed-title {
     font-size: clamp(34px, 8.5vw, 68px);
-    text-align: center;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .embossed-row {
+    text-align: left;
   }
 
   .row-where, .row-purpose, .row-becomes, .row-perception {
-    text-align: center;
+    text-align: left;
     padding-right: 0;
+  }
+
+  .hero-bottom-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    padding-top: 24px;
+  }
+
+  .hero-right-meta {
+    justify-content: flex-end;
   }
 
   .work-grid {
