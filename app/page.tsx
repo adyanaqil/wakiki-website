@@ -82,7 +82,6 @@ const brandClients = [
 const journeySteps = [
   { title: 'Design', desc: 'Visual communication' },
   { title: 'Photo', desc: 'Real stories' },
-  { title: 'Film', desc: 'Moving ideas' },
   { title: 'Brands', desc: 'Lasting impact' },
 ]
 

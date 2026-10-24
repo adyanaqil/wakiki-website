@@ -96,7 +96,7 @@ export const services: ServiceEntry[] = [
   {
     number: '03',
     title: 'Produce',
-    items: ['TVC', 'Film', 'Photography', 'Content'],
+    items: ['TVC', 'Video', 'Photography', 'Content'],
   },
   {
     number: '04',
@@ -204,7 +204,6 @@ export const earlyCareerProjects: ProjectEntry[] = [
 export const journeySteps: JourneyEntry[] = [
   { stage: 'DESIGN', description: 'Visual Communication' },
   { stage: 'PHOTO', description: 'Real Stories' },
-  { stage: 'FILM', description: 'Moving Ideas' },
   { stage: 'BRANDS', description: 'Lasting Impact' },
 ]
 
