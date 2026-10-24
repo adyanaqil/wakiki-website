@@ -88,6 +88,7 @@ const journeySteps = [
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [activeCard, setActiveCard] = useState<string | null>(null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20)
@@ -205,9 +206,10 @@ export default function Home() {
             {projects.map((project) => (
               <Link
                 href={`/work/${project.slug}`}
-                className="work-card"
+                className={`work-card ${activeCard === project.slug ? 'is-active' : ''}`}
                 key={project.number}
                 aria-label={`View project: ${project.name}`}
+                onClick={() => setActiveCard(project.slug)}
               >
                 <div className="card-media">
                   {project.image ? (

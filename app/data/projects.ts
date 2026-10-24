@@ -194,11 +194,11 @@ export const projects: Project[] = [
     },
   },
   {
-    slug: 'coffeespace',
+    slug: 'hiru-koffee',
     number: '06',
-    name: 'Coffeespace',
+    name: 'Hiru Koffee',
     tagline: 'Membangun atmosfer ruang komunal dan identitas kopi artisanal kontemporer.',
-    client: 'Coffeespace',
+    client: 'Hiru Koffee',
     category: 'F&B · SPECIALTY COFFEE',
     location: 'Medan, Indonesia',
     year: '2024',
@@ -211,17 +211,17 @@ export const projects: Project[] = [
       'Spatial & Signage Direction',
       'Social Media Aesthetic',
     ],
-    image: '/images/coffeespace.jpg',
+    image: '/images/hiru-koffee.jpg',
     summary:
-      'Coffeespace merupakan kedai kopi artisanal dan ruang berkarya komunal. Wakiki merancang keseluruhan arah merek, bahasa visual ruang, dan strategi komunikasi rasa yang hangat dan inklusif.',
+      'Hiru Koffee merupakan kedai kopi artisanal dan ruang berkarya komunal. Wakiki merancang keseluruhan arah merek, bahasa visual ruang, dan strategi komunikasi rasa yang hangat dan inklusif.',
     overview:
-      'Coffeespace didirikan sebagai titik temu bagi para kreator, profesional, dan penikmat kopi spesialti. Di tengah maraknya kedai kopi modern, Coffeespace memerlukan fondasi merek yang kuat agar tidak sekadar menjadi tren sesaat, melainkan tempat yang memiliki keterikatan emosional mendalam dengan komunitasnya.',
+      'Hiru Koffee didirikan sebagai titik temu bagi para kreator, profesional, dan penikmat kopi spesialti. Di tengah maraknya kedai kopi modern, Hiru Koffee memerlukan fondasi merek yang kuat agar tidak sekadar menjadi tren sesaat, melainkan tempat yang memiliki keterikatan emosional mendalam dengan komunitasnya.',
     challenge:
       'Menyeimbangkan kesan kepakaran kopi yang serius dengan atmosfer ruang yang ramah dan mudah didekati bagi siapa saja yang ingin bersantai atau bekerja produktif.',
     approach:
       'Kami mengembangkan konsep "Thoughtful Space, Crafted Cup". Identitas visual memadukan garis arsitektural minimalis dengan nuansa earth-tone hangat. Kami mengarahkan desain kemasan beans, elemen signage kayu dan akrilik, serta visual media sosial yang mengedepankan cerita di balik setiap biji kopi.',
     result:
-      'Coffeespace sukses membuka pintunya dengan sambutan hangat komunitas lokal, mencatat penjualan biji kopi sangrai yang melampaui target bulanan, dan menjadi rujukan lifestyle café di kota Medan.',
+      'Hiru Koffee sukses membuka pintunya dengan sambutan hangat komunitas lokal, mencatat penjualan biji kopi sangrai yang melampaui target bulanan, dan menjadi rujukan lifestyle café di kota Medan.',
     quote: {
       text: 'Kopi yang baik menghubungkan pikiran, tetapi ruang yang tepat menghubungkan manusia.',
       author: 'Wakiki Creative Notes',
@@ -234,7 +234,12 @@ export function getAllProjects(): Project[] {
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {
-  return projects.find((p) => p.slug === slug || (slug === 'sushi-catering' && p.slug === 'susi-catering'))
+  return projects.find(
+    (p) =>
+      p.slug === slug ||
+      (slug === 'sushi-catering' && p.slug === 'susi-catering') ||
+      (slug === 'coffeespace' && p.slug === 'hiru-koffee')
+  )
 }
 
 export function getAdjacentProjects(slug: string): {

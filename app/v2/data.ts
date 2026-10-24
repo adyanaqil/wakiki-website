@@ -47,7 +47,7 @@ export const brandingProjects: ProjectEntry[] = [
   },
   {
     number: '04',
-    client: 'HIRU COFFEE',
+    client: 'HIRU KOFFEE',
     meta: 'COFFEE · MEDAN',
     role: 'Branding Consultant · Creative Director',
     description: 'Brand direction, creative concept, and visual communication.',
