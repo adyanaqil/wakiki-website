@@ -75,7 +75,7 @@ export const projects: Project[] = [
       'Brand Communication Guidelines',
       'Social Media Visual System',
     ],
-    image: '/images/sushi.jpg',
+    image: '/images/susi.jpg',
     summary:
       'Susi Catering menghadirkan layanan katering susi dan sajian Jepang kontemporer untuk event korporat, pesta privat, dan konsumsi harian. Wakiki merancang konsep kampanye komersial dan menyutradarai TVC bertajuk "Ricebowl Itu Keren".',
     overview:
