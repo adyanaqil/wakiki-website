@@ -311,14 +311,14 @@ export default function Home() {
               </h2>
               <div className="contact-short-line" />
               <div className="contact-btn-group">
-                <a className="circle-arrow-btn light" href="mailto:hello@wakiki.id">
+                <a className="circle-arrow-btn light" href="https://wa.me/6281317924596" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp +62 813-1792-4596">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
                     <line x1="5" y1="12" x2="19" y2="12" />
                     <polyline points="12 5 19 12 12 19" />
                   </svg>
                 </a>
-                <a className="contact-cta-text" href="mailto:hello@wakiki.id">
-                  Get in touch
+                <a className="contact-cta-text" href="https://wa.me/6281317924596" target="_blank" rel="noopener noreferrer">
+                  +62 813-1792-4596
                 </a>
               </div>
             </div>
@@ -348,7 +348,7 @@ export default function Home() {
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
           <a href="https://behance.net" target="_blank" rel="noopener noreferrer">BEHANCE</a>
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
-          <a href="https://wa.me/6280000000000" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
+          <a href="https://wa.me/6281317924596" target="_blank" rel="noopener noreferrer">WHATSAPP</a>
         </div>
       </footer>
     </div>
