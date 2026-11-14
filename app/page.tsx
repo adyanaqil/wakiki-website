@@ -19,18 +19,18 @@ const services = [
   {
     num: '03',
     title: 'Produce',
-    items: ['TVC', 'Video', 'Photography', 'Content'],
+    items: ['Design', 'Video / TVC', 'Photography', 'Content'],
   },
   {
     num: '04',
     title: 'Consult',
-    items: ['Brand development', 'Communication', 'Creative solution'],
+    items: ['Brand development', 'Creative solution'],
   },
 ]
 
 const mediaClients = [
   { name: 'VICE', sub: 'AUSTRALIA', logo: '/logos/vice.png', logoClass: 'logo-vice' },
-  { name: 'NEW NARRATIVE', sub: 'SINGAPORE' },
+  { name: 'New Naratif', sub: 'SINGAPORE', logo: '/logos/new-naratif.png', logoClass: 'logo-nn' },
   { name: 'Global Post', sub: 'SOUTH EAST', logo: '/logos/global-post.png', logoClass: 'logo-gp' },
   { name: 'TRAVEL WIRE ASIA', sub: '' },
 ]
