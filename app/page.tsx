@@ -29,54 +29,18 @@ const services = [
 ]
 
 const mediaClients = [
-  { name: 'VICE', sub: 'AUSTRALIA', isVice: true },
+  { name: 'VICE', sub: 'AUSTRALIA', logo: '/logos/vice.png', logoClass: 'logo-vice' },
   { name: 'NEW NARRATIVE', sub: 'SINGAPORE' },
-  { name: 'SOUTH EAST', sub: 'GLOBAL POST', isStacked: true },
+  { name: 'Global Post', sub: 'SOUTH EAST', logo: '/logos/global-post.png', logoClass: 'logo-gp' },
   { name: 'TRAVEL WIRE ASIA', sub: '' },
 ]
 
 const brandClients = [
-  {
-    name: 'Gubernur Sumatera Utara',
-    icon: (
-      <svg className="client-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 2L4 7v6c0 5 8 9 8 9s8-4 8-9V7l-8-5z" />
-        <circle cx="12" cy="11" r="3" />
-      </svg>
-    ),
-  },
-  {
-    name: 'PLN\nUPDL Tuntungan',
-    icon: (
-      <svg className="client-svg-icon pln-box" viewBox="0 0 24 24" fill="currentColor">
-        <rect x="2" y="2" width="20" height="20" rx="2" fill="#555" />
-        <path d="M13 4L7 13h5l-2 7 8-10h-5l2-6z" fill="#fff" />
-      </svg>
-    ),
-  },
-  {
-    name: 'Rumah Sakit\nUUM Haji',
-    icon: (
-      <svg className="client-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <path d="M12 3a9 9 0 1 0 9 9c0-.46-.04-.92-.1-1.36a7 7 0 1 1-7.54-7.54C12.92 3.04 12.46 3 12 3z" />
-        <path d="M12 8v4m-2-2h4" strokeWidth="2" strokeLinecap="round" />
-      </svg>
-    ),
-  },
-  {
-    name: 'RKP\nLogistic',
-    icon: null,
-    isBoldText: true,
-  },
-  {
-    name: 'Rumah Makan\nGaruda',
-    icon: (
-      <svg className="client-svg-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-        <circle cx="12" cy="12" r="9" />
-        <path d="M8 14s2-3 4-3 4 3 4 3M12 8v3" />
-      </svg>
-    ),
-  },
+  { name: 'Gubernur Sumatera Utara', logo: '/logos/sumut.svg', logoClass: 'logo-sumut' },
+  { name: 'PLN UPDL Tuntungan', logo: '/logos/pln.svg', logoClass: 'logo-pln' },
+  { name: 'Rumah Sakit Umum Haji Medan', logo: '/logos/rsu-haji.png', logoClass: 'logo-rsu' },
+  { name: 'RKP Logistic', logo: '/logos/rkp.png', logoClass: 'logo-rkp' },
+  { name: 'Restoran Garuda Padang Cuisine', logo: '/logos/garuda.png', logoClass: 'logo-garuda' },
 ]
 
 const journeySteps = [
@@ -247,15 +211,11 @@ export default function Home() {
           <div className="trusted-row media-row">
             {mediaClients.map((client, idx) => (
               <div className="media-logo-item" key={idx}>
-                {client.isVice ? (
-                  <div className="vice-logo">
-                    <span className="vice-wordmark">VICE</span>
-                    <small className="client-sub">{client.sub}</small>
-                  </div>
-                ) : client.isStacked ? (
-                  <div className="stacked-logo">
-                    <strong className="client-main-name">SOUTH EAST</strong>
-                    <span className="client-sub-name">GLOBAL POST</span>
+                {client.logo ? (
+                  <div className="logo-stack">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img className={`logo-img ${client.logoClass}`} src={client.logo} alt={client.name} />
+                    {client.name === 'VICE' && <small className="client-sub">{client.sub}</small>}
                   </div>
                 ) : (
                   <div className="standard-logo">
@@ -271,12 +231,8 @@ export default function Home() {
           <div className="trusted-row brand-row">
             {brandClients.map((client, idx) => (
               <div className="brand-logo-item" key={idx}>
-                {client.icon ? <div className="brand-icon-wrap">{client.icon}</div> : null}
-                <div className={`brand-name-wrap ${client.isBoldText ? 'bold-rkp' : ''}`}>
-                  {client.name.split('\n').map((line, lIdx) => (
-                    <span key={lIdx}>{line}</span>
-                  ))}
-                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img className={`logo-img ${client.logoClass}`} src={client.logo} alt={client.name} />
               </div>
             ))}
           </div>
