@@ -135,7 +135,7 @@ export const projects: Project[] = [
     location: 'Indonesia',
     year: '2023 - 2024',
     role: 'Visual Storyteller · Creative Consultant',
-    types: ['Branding', 'Photography', 'Campaign'],
+    types: ['Photography'],
     deliverables: [
       'Tourism Campaign Strategy',
       'Cinematic Visual Documentation',
@@ -169,7 +169,7 @@ export const projects: Project[] = [
     location: 'Medan, Indonesia',
     year: '2023',
     role: 'Branding Consultant · Creative Director',
-    types: ['Branding', 'Creative direction', 'Identity'],
+    types: ['Creative direction', 'Identity'],
     deliverables: [
       'Brand Identity Architecture',
       'Spatial Visual Experience',
