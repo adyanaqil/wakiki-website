@@ -111,23 +111,13 @@ export default function Home() {
           </div>
 
           <div className="hero-top-row">
-            <div className="hero-left">
-              <h1 className="hero-headline">
-                Creative partner<br />
-                for a brighter<br />
-                brand tomorrow.
-              </h1>
-              <div className="hero-short-line" />
-            </div>
-
-            <div className="hero-right-title">
-              <div className="embossed-title">
-                <div className="embossed-row row-where">WHERE</div>
-                <div className="embossed-row row-purpose">PURPOSE</div>
-                <div className="embossed-row row-becomes">BECOMES</div>
-                <div className="embossed-row row-perception">PERCEPTION</div>
-              </div>
-            </div>
+            <h1 className="hero-right-title">
+              <span className="embossed-title">
+                <span className="embossed-row hero-line hero-line-1">Creative partner</span>
+                <span className="embossed-row hero-line hero-line-2">for a brighter</span>
+                <span className="embossed-row hero-line hero-line-3">brand tomorrow.</span>
+              </span>
+            </h1>
           </div>
 
           <div className="hero-bottom-row">
