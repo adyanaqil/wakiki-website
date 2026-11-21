@@ -463,13 +463,15 @@ button {
   text-align: right;
 }
 
-.hero-right-title {
-  margin-top: 16vh;
+/* Headline di tengah vertikal hero: baris atas mengisi ruang kosong, isinya rata tengah */
+.hero-top-row {
+  flex: 1;
+  align-items: center;
 }
 
 @media (max-width: 900px) {
-  .hero-right-title {
-    margin-top: 0;
+  .hero-top-row {
+    flex: none;
   }
 
   /* mobile: 30% lebih kecil dari clamp(34px, 8.5vw, 68px) */
