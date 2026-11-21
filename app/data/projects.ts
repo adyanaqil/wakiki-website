@@ -151,7 +151,7 @@ export const projects: Project[] = [
     challenge:
       'Banyak promosi destinasi wisata terjebak dalam visual kartu pos konvensional. Tantangannya adalah menangkap kedalaman emosional, spiritualitas ruang alam nusantara, dan interaksi manusia yang autentik tanpa kehilangan daya tarik kemegahannya.',
     approach:
-      'Kami menerapkan teknik dokumenter berstandar internasional dengan pencahayaan alami dramatis dan framing humanis. Setiap sudut visual dikurasi untuk mengajak penonton merasakan atmosfer, aroma, dan keagungan tempat yang mereka lihat.',
+      'Setiap sudut visual dikurasi untuk mengajak penonton merasakan atmosfer, aroma, dan keindahan tempat yang mereka lihat.',
     result:
       'Materi kampanye dan arsip visual digunakan dalam berbagai showcase promosi internasional, memperkuat citra destinasi Indonesia sebagai pilihan perjalanan bernilai tinggi dan berkesan mendalam.',
     quote: {
@@ -181,11 +181,11 @@ export const projects: Project[] = [
     summary:
       'Mata Air adalah penyedia layanan premium car care dan detailing modern. Wakiki merestrukturisasi identitas visual dan alur pengalaman pelanggan guna menegaskan standar presisi dan kebersihan tingkat tinggi.',
     overview:
-      'Mata Air Auto Care hadir untuk menjawab kebutuhan para pemilik kendaraan yang menginginkan perawatan otomotif dengan ketelitian craftsmanship layaknya salon kecantikan mewah bagi mobil. Brand memerlukan repositioning dari sekadar tempat cuci mobil menjadi studio perawatan kendaraan bereputasi tinggi.',
+      'Mata Air Auto Care hadir untuk menjawab kebutuhan para pemilik kendaraan yang menginginkan perawatan otomotif dengan ketelitian craftsmanship layaknya salon kecantikan mewah bagi mobil. Brand memerlukan positioning dari sekadar tempat cuci mobil menjadi studio perawatan kendaraan bereputasi tinggi.',
     challenge:
-      'Industri car wash lokal kerap diidentikkan dengan tempat yang basah, kotor, dan bising. Tantangan kami adalah mendefinisikan ulang impresi bengkel perawatan menjadi ruang yang bersih, elegan, dan menenangkan, dengan standar estetika monokromatik kontemporer.',
+      'Industri car wash lokal kerap diidentikkan dengan tempat yang basah, kotor, dan kurang nyaman. Tantangan kami adalah mendefinisikan ulang impresi car care menjadi ruang yang bersih, elegan, dan menenangkan, dengan standar estetika yang baik.',
     approach:
-      'Kami merancang sistem visual berbasis tipografi presisi, palet warna dingin yang higienis, serta tata ruang beraksen pencahayaan tajam yang menonjolkan pantulan kilau cat kendaraan. Setiap titik sentuh pelanggan—mulai dari ruang tunggu hingga seragam teknisi—dikurasi dengan standar hospitality.',
+      'Kami merancang sistem visual yang menonjolkan hasil dari kinerja tim mata air dengan hasil yang maksimal dan membangun brand image agar mata air menjadi top tier car care di medan',
     result:
       'Repositioning merek melahirkan lonjakan retensi pelanggan premium hingga 75% serta menjadikan Mata Air sebagai destinasi perawatan otomotif paling bergengsi di kawasan Medan.',
     quote: {
@@ -197,7 +197,7 @@ export const projects: Project[] = [
     slug: 'hiru-koffee',
     number: '06',
     name: 'Hiru Koffee',
-    tagline: 'Membangun atmosfer ruang komunal dan identitas kopi artisanal kontemporer.',
+    tagline: 'Membangun atmosfer hangat dan identitas kopi artisan.',
     client: 'Hiru Koffee',
     category: 'F&B · SPECIALTY COFFEE',
     location: 'Medan, Indonesia',
@@ -213,15 +213,15 @@ export const projects: Project[] = [
     ],
     image: '/images/hiru-koffee.jpg',
     summary:
-      'Hiru Koffee merupakan kedai kopi artisanal dan ruang berkarya komunal. Wakiki merancang keseluruhan arah merek, bahasa visual ruang, dan strategi komunikasi rasa yang hangat dan inklusif.',
+      ' Wake. Inc merancang keseluruhan arah merek, bahasa visual, dan strategi komunikasi rasa yang hangat.',
     overview:
-      'Hiru Koffee didirikan sebagai titik temu bagi para kreator, profesional, dan penikmat kopi spesialti. Di tengah maraknya kedai kopi modern, Hiru Koffee memerlukan fondasi merek yang kuat agar tidak sekadar menjadi tren sesaat, melainkan tempat yang memiliki keterikatan emosional mendalam dengan komunitasnya.',
+      'Di tengah maraknya kedai kopi modern, Hiru Koffee memerlukan fondasi merek yang kuat agar tidak sekadar menjadi tren sesaat, melainkan tempat yang memiliki keterikatan emosional mendalam dengan pelanggan.',
     challenge:
-      'Menyeimbangkan kesan kepakaran kopi yang serius dengan atmosfer ruang yang ramah dan mudah didekati bagi siapa saja yang ingin bersantai atau bekerja produktif.',
+      'Memberikan suasau ruang yang ramah dan mudah didekati bagi siapa saja yang ingin bersantai atau bekerja produktif.',
     approach:
-      'Kami mengembangkan konsep "Thoughtful Space, Crafted Cup". Identitas visual memadukan garis arsitektural minimalis dengan nuansa earth-tone hangat. Kami mengarahkan desain kemasan beans, elemen signage kayu dan akrilik, serta visual media sosial yang mengedepankan cerita di balik setiap biji kopi.',
+      'Kami membangun brand yang melekat pada desain desain kemasan beans, cup, serta visual media sosial yang mengedepankan cerita di balik brand itu sendiri.',
     result:
-      'Hiru Koffee sukses membuka pintunya dengan sambutan hangat komunitas lokal, mencatat penjualan biji kopi sangrai yang melampaui target bulanan, dan menjadi rujukan lifestyle café di kota Medan.',
+      'Hiru Koffee berhasil membuka pintunya dan menyambut hangat dari pecinta kopi.',
     quote: {
       text: 'Kopi yang baik menghubungkan pikiran, tetapi ruang yang tepat menghubungkan manusia.',
       author: 'Wakiki Creative Notes',
