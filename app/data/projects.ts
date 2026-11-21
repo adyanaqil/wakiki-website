@@ -219,7 +219,7 @@ export const projects: Project[] = [
     challenge:
       'Memberikan suasau ruang yang ramah dan mudah didekati bagi siapa saja yang ingin bersantai atau bekerja produktif.',
     approach:
-      'Kami membangun brand yang melekat pada desain desain kemasan beans, cup, serta visual media sosial yang mengedepankan cerita di balik brand itu sendiri.',
+      'Kami menciptakan identitas brand dan di implementasikan pada kemasan beans, cup, merchandise serta visual media sosial yang mengedepankan cerita di balik brand itu sendiri.',
     result:
       'Hiru Koffee berhasil membuka pintunya dan menyambut hangat dari pecinta kopi.',
     quote: {
