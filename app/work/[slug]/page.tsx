@@ -95,9 +95,10 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <section className="project-media-section">
           <div className="project-image-container">
             <img
-              src={project.image}
+              src={project.detailImage ?? project.image}
               alt={project.name}
               className="project-hero-image"
+              style={project.detailImagePosition ? { objectPosition: project.detailImagePosition } : undefined}
             />
             <div className="project-image-gradient" />
             <div className="project-image-meta">

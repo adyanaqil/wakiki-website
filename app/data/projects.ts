@@ -11,6 +11,10 @@ export interface Project {
   types: string[]
   deliverables: string[]
   image: string
+  /** Foto isi di halaman detail proyek (jika kosong, pakai `image`) */
+  detailImage?: string
+  /** CSS object-position untuk detailImage (mis. '50% 70%') */
+  detailImagePosition?: string
   summary: string
   overview: string
   challenge: string
@@ -42,6 +46,7 @@ export const projects: Project[] = [
       'Cinematic Brand Storytelling',
     ],
     image: '/images/dimsum.jpg',
+    detailImage: '/images/detail/dimsum.jpg',
     summary:
       'Dimsum Qoqom adalah brand kuliner berbasis di Medan yang berfokus pada kualitas cita rasa dimsum autentik. Proyek ini memposisikan ulang brand dengan identitas kontemporer dan company profile yang berdaya tarik emosional.',
     overview:
@@ -76,6 +81,8 @@ export const projects: Project[] = [
       'Social Media Visual System',
     ],
     image: '/images/susi.jpg',
+    detailImage: '/images/detail/susi.jpg',
+    detailImagePosition: '50% 62%',
     summary:
       'Susi Catering menghadirkan layanan katering mulai dari wedding, event korporat, pesta privat, dan konsumsi harian. Wake. Inc merancang konsep kampanye komersial dan menyutradarai TVC bertajuk "Ricebowl Itu Keren". dan juga menjadi konsultan brand untuk Susi Catering',
     overview:
@@ -110,6 +117,7 @@ export const projects: Project[] = [
       'Digital Collaterals & Lookbook',
     ],
     image: '/images/golf.jpg',
+    detailImage: '/images/detail/golf.jpg',
     summary:
       'A3 Golf Gallery adalah galeri golf indoor dan pusat simulator presisi tinggi di Jakarta. Wake. Inc menyusun positioning brand eksklusif, arahan konsep kreatif, dan bahasa visual modern.',
     overview:
@@ -144,6 +152,7 @@ export const projects: Project[] = [
       'Editorial Photo Series',
     ],
     image: '/images/wonderful-indonesia.jpg',
+    detailImage: '/images/detail/wonderful-indonesia.jpg',
     summary:
       'Kampanye komunikasi visual strategis untuk mempromosikan keanekaragaman lanskap dan kekayaan budaya Indonesia melalui pendekatan sinematik yang menggugah wisatawan mancanegara maupun domestik.',
     overview:
@@ -178,6 +187,7 @@ export const projects: Project[] = [
       'Digital Brand Guidelines',
     ],
     image: '/images/mata-air.jpg',
+    detailImage: '/images/detail/mata-air.jpg',
     summary:
       'Mata Air adalah penyedia layanan premium car care dan detailing modern. Wake. Inc merestrukturisasi identitas visual dan alur pengalaman pelanggan guna menegaskan standar presisi dan kebersihan tingkat tinggi.',
     overview:
@@ -212,6 +222,7 @@ export const projects: Project[] = [
       'Social Media Aesthetic',
     ],
     image: '/images/hiru-koffee.jpg',
+    detailImage: '/images/detail/hiru-koffee.jpg',
     summary:
       'Wake. Inc merancang keseluruhan arah merek, bahasa visual, dan strategi komunikasi rasa yang hangat.',
     overview:

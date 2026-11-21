@@ -453,6 +453,8 @@ button {
 
 /* Hero headline: DM Sans thin, right-aligned, lower position */
 .hero-right-title .embossed-title {
+  /* 30% lebih kecil dari ukuran dasar clamp(28px, 3.4vw, 54px) */
+  font-size: clamp(19.6px, 2.38vw, 37.8px);
   font-family: 'DM Sans', sans-serif;
   font-weight: 200;
   letter-spacing: -0.02em;
@@ -468,6 +470,11 @@ button {
 @media (max-width: 900px) {
   .hero-right-title {
     margin-top: 0;
+  }
+
+  /* mobile: 30% lebih kecil dari clamp(34px, 8.5vw, 68px) */
+  .hero-right-title .embossed-title {
+    font-size: clamp(23.8px, 5.95vw, 47.6px);
   }
 }
 
