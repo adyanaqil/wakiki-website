@@ -451,18 +451,28 @@ button {
   padding-right: 0;
 }
 
-/* Hero headline: DM Sans thin, centered lines */
+/* Hero headline: DM Sans thin, right-aligned, lower position */
 .hero-right-title .embossed-title {
   font-family: 'DM Sans', sans-serif;
   font-weight: 200;
   letter-spacing: -0.02em;
   line-height: 1;
-  align-items: center;
-  text-align: center;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.hero-right-title {
+  margin-top: 16vh;
+}
+
+@media (max-width: 900px) {
+  .hero-right-title {
+    margin-top: 0;
+  }
 }
 
 .hero-right-title .embossed-row {
-  text-align: center;
+  text-align: right;
 }
 
 /* Hero headline: slide in from the right on first load */
