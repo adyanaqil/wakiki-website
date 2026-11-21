@@ -20,12 +20,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!project) {
     return {
-      title: 'Project Not Found — WAKIKI®',
+      title: 'Project Not Found — WAKE. INC®',
     }
   }
 
   return {
-    title: `${project.name} — WAKIKI® Selected Work`,
+    title: `${project.name} — WAKE. INC® Selected Work`,
     description: project.summary,
   }
 }
@@ -46,7 +46,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       <header className="site-nav is-scrolled">
         <div className="nav-left">
           <Link className="wordmark" href="/">
-            WAKIKI<span>®</span>
+            WAKE. INC<span>®</span>
           </Link>
         </div>
 
@@ -59,7 +59,7 @@ export default async function ProjectDetailPage({ params }: PageProps) {
         <div className="nav-right">
           <div className="nav-meta">
             <span>TRUSTED BY</span>
-            <span>WAKIKI®</span>
+            <span>WAKE. INC®</span>
           </div>
           <Link href="/#work" className="nav-circle-btn" aria-label="Back to work">
             <span className="circle-dot" style={{ background: '#222' }} />
@@ -188,13 +188,6 @@ export default async function ProjectDetailPage({ params }: PageProps) {
                 <h2 className="story-title">Pendekatan &amp; Konsep Kreatif</h2>
                 <p className="story-paragraph">{project.approach}</p>
               </article>
-
-              {/* The Outcome & Impact */}
-              <article className="story-block">
-                <span className="story-subtag">04. IMPACT &amp; RESULTS</span>
-                <h2 className="story-title">Hasil &amp; Dampak Bisnis</h2>
-                <p className="story-paragraph">{project.result}</p>
-              </article>
             </div>
           </div>
         </section>
@@ -242,9 +235,9 @@ export default async function ProjectDetailPage({ params }: PageProps) {
       <footer className="site-footer">
         <div className="footer-left">
           <Link className="wordmark" href="/">
-            WAKIKI<span>®</span>
+            WAKE. INC<span>®</span>
           </Link>
-          <span className="footer-copy">© 2026 Wakiki. All rights reserved.</span>
+          <span className="footer-copy">© 2026 Wake. Inc. All rights reserved.</span>
         </div>
         <div className="footer-links">
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>

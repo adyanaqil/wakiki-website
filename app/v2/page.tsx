@@ -22,7 +22,7 @@ export default function V2Page() {
     <div className="wakiki-v2-container">
       {/* Top Version Indicator Bar */}
       <aside className="v2-version-bar" aria-label="Version Switcher">
-        <span>WAKIKI — V2 (Text-Based Editorial Portfolio)</span>
+        <span>WAKE. INC — V2 (Text-Based Editorial Portfolio)</span>
         <Link href="/" title="Switch to Version 1">
           ← View Version 1 (Visual Cards)
         </Link>
@@ -30,8 +30,8 @@ export default function V2Page() {
 
       {/* Navigation */}
       <header className="v2-nav">
-        <Link href="#top" className="v2-nav-logo" aria-label="WAKIKI Home">
-          WAKIKI<span>®</span>
+        <Link href="#top" className="v2-nav-logo" aria-label="WAKE. INC Home">
+          WAKE. INC<span>®</span>
         </Link>
 
         <nav className={`v2-nav-links ${menuOpen ? 'is-open' : ''}`} aria-label="Main Navigation">
@@ -326,10 +326,10 @@ export default function V2Page() {
           ================================================================= */}
       <footer className="v2-footer">
         <div className="v2-footer-left">
-          <Link href="#top" className="v2-nav-logo" aria-label="WAKIKI Home">
-            WAKIKI<span>®</span>
+          <Link href="#top" className="v2-nav-logo" aria-label="WAKE. INC Home">
+            WAKE. INC<span>®</span>
           </Link>
-          <span className="v2-footer-copy">© 2026 Wakiki. All rights reserved.</span>
+          <span className="v2-footer-copy">© 2026 Wake. Inc. All rights reserved.</span>
         </div>
 
         <div className="v2-footer-socials">

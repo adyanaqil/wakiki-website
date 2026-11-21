@@ -63,7 +63,7 @@ export default function Home() {
   return (
     <div className="site-wrapper">
       <div style={{ background: '#141413', color: '#eae8e4', padding: '8px 4.5vw', fontSize: '10px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', letterSpacing: '0.08em', textTransform: 'uppercase' }}>
-        <span>WAKIKI — Versi 1 (Visual Cards)</span>
+        <span>WAKE. INC — Versi 1 (Visual Cards)</span>
         <a href="/v2" style={{ color: '#fff', textDecoration: 'underline', textUnderlineOffset: '3px' }}>
           Lihat Versi 2 (Text-Based Editorial) →
         </a>
@@ -72,7 +72,7 @@ export default function Home() {
       <header className={`site-nav ${scrolled ? 'is-scrolled' : ''}`}>
         <div className="nav-left">
           <a className="wordmark" href="#top">
-            WAKIKI<span>®</span>
+            WAKE. INC<span>®</span>
           </a>
         </div>
 
@@ -340,9 +340,9 @@ export default function Home() {
       <footer className="site-footer">
         <div className="footer-left">
           <a className="wordmark" href="#top">
-            WAKIKI<span>®</span>
+            WAKE. INC<span>®</span>
           </a>
-          <span className="footer-copy">© 2026 Wakiki. All rights reserved.</span>
+          <span className="footer-copy">© 2026 Wake. Inc. All rights reserved.</span>
         </div>
         <div className="footer-links">
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>

@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'WAKIKI — Branding Consultant & Creative Director',
+  title: 'WAKE. INC — Branding Consultant & Creative Director',
   description:
-    'WAKIKI is a branding consultant and creative director helping brands develop strategy, identity, campaigns and creative production.',
+    'WAKE. INC is a branding consultant and creative director helping brands develop strategy, identity, campaigns and creative production.',
   keywords: [
     'Branding Consultant Medan',
     'Creative Director Medan',

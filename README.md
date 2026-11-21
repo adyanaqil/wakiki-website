@@ -1,6 +1,6 @@
-# WAKIKI — The New Design Age
+# WAKE. INC — The New Design Age
 
-Next.js implementation of the WAKIKI creative portfolio / brand consultant website based on the supplied PRD and visual reference.
+Next.js implementation of the WAKE. INC creative portfolio / brand consultant website based on the supplied PRD and visual reference.
 
 ## Run locally
 
@@ -25,4 +25,4 @@ Open http://localhost:3000
 
 The project uses a deliberately minimal dependency set. Visual project imagery is generated with CSS art placeholders so the site is runnable without external image assets. Replace `ProjectVisual` with Next/Image assets when the final project photography is available.
 
-The content follows the supplied WAKIKI Website PRD. Contact details and social links are placeholders and should be replaced before production.
+The content follows the supplied WAKE. INC Website PRD. Contact details and social links are placeholders and should be replaced before production.

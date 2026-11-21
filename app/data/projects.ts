@@ -15,7 +15,6 @@ export interface Project {
   overview: string
   challenge: string
   approach: string
-  result: string
   quote?: {
     text: string
     author?: string
@@ -50,18 +49,16 @@ export const projects: Project[] = [
       'Tantangan utama adalah mengubah persepsi publik terhadap dimsum—dari sekadar makanan santai pinggir jalan menjadi pengalaman kuliner yang hangat, higienis, dan berkelas, tanpa menghilangkan rasa keakraban lokal Medan. Identitas visual lama kurang mencerminkan kualitas premium dari proses pembuatannya.',
     approach:
       'Kami menerapkan pendekatan sensory storytelling. Setiap elemen komunikasi visual diarahkan untuk merayakan proses: kepulan uap hangat dari wadah bambu tradisional, kelembutan tekstur kulit dimsum, serta interaksi hangat antar pelanggan. Kami merancang panduan identitas visual baru, tone of voice komunikasi, hingga menyutradarai profil perusahaan yang mengalirkan filosofi ketulusan dapur Dimsum Qoqom.',
-    result:
-      'Peluncuran arah merek dan profil visual baru menghasilkan peningkatan brand recall hingga 40% pada segmen target keluarga muda dan pekerja profesional, meningkatkan volume kunjungan gerai, serta memperkuat posisi Dimsum Qoqom sebagai salah satu ikon kuliner kontemporer di Medan.',
     quote: {
       text: 'Kehangatan sebuah sajian bukan hanya dari suhu masakannya, melainkan dari ketulusan cerita yang disampaikan di setiap gigitan.',
-      author: 'Wakiki Creative Notes',
+      author: 'Wake. Inc Creative Notes',
     },
   },
   {
     slug: 'susi-catering',
     number: '02',
     name: 'Susi Catering',
-    tagline: 'Kampanye komersial dinamis dan arahan kreatif untuk pengalaman kuliner Jepang modern.',
+    tagline: 'Kampanye komersial dinamis dan arahan kreatif untuk pengalaman kuliner modern.',
     client: 'Susi Catering',
     category: 'F&B · CATERING & HOSPITALITY',
     location: 'Medan, Indonesia',
@@ -77,18 +74,16 @@ export const projects: Project[] = [
     ],
     image: '/images/susi.jpg',
     summary:
-      'Susi Catering menghadirkan layanan katering susi dan sajian Jepang kontemporer untuk event korporat, pesta privat, dan konsumsi harian. Wakiki merancang konsep kampanye komersial dan menyutradarai TVC bertajuk "Ricebowl Itu Keren".',
+      'Susi Catering menghadirkan layanan katering susi dan sajian kontemporer untuk event korporat, pesta privat, dan konsumsi harian. Wake. Inc merancang konsep kampanye komersial dan menyutradarai TVC bertajuk "Ricebowl Itu Keren".',
     overview:
-      'Susi Catering lahir untuk menjembatani kecintaan masyarakat terhadap cita rasa kuliner Jepang segar dengan kemudahan layanan katering fleksibel dan produk ricebowl siap santap. Diperlukan sebuah kampanye komunikasi kreatif yang segar, energik, dan langsung melekat di benak konsumen muda.',
+      'Susi Catering lahir untuk menjembatani kecintaan masyarakat terhadap cita rasa kuliner segar dengan kemudahan layanan katering fleksibel dan produk ricebowl siap santap. Diperlukan sebuah kampanye komunikasi kreatif yang segar, energik, dan langsung melekat di benak konsumen muda.',
     challenge:
-      'Pasar sajian Jepang dipenuhi oleh visual yang kaku dan repetitif. Tantangannya adalah merumuskan pesan yang persuasif dan trendi agar ricebowl dan katering susi dipandang sebagai gaya hidup yang keren, praktis, dan tetap higienis serta bernilai gizi tinggi.',
+      'Pasar sajian kuliner dipenuhi oleh visual yang kaku dan repetitif. Tantangannya adalah merumuskan pesan yang persuasif dan trendi agar ricebowl dan katering susi dipandang sebagai gaya hidup yang keren, praktis, dan tetap higienis serta bernilai gizi tinggi.',
     approach:
       'Kami merumuskan kampanye "Ricebowl Itu Keren" yang memadukan fotografi makro bahan-bahan segar (potongan salmon segar, nori renyah, dan butiran beras premium) dengan ritme video yang dinamis dan modern. Arahan seni menggunakan kontras warna tegas yang memancing selera makan, didukung narasi audio visual TVC yang playful namun profesional.',
-    result:
-      'Kampanye TVC dan visual digital berhasil melipatgandakan interaksi media sosial dan mendorong kenaikan pesanan katering korporat lebih dari 65% selama periode kuartal pertama kampanye diluncurkan, sekaligus memantapkan citra brand sebagai pelopor catering susi premium yang stylish.',
     quote: {
-      text: 'Menghadirkan seni kuliner Jepang ke piring sehari-hari dengan energi muda dan standar visual kelas satu.',
-      author: 'Wakiki Creative Notes',
+      text: 'Menghadirkan seni kuliner ke piring sehari-hari dengan energi muda dan standar visual kelas satu.',
+      author: 'Wake. Inc Creative Notes',
     },
   },
   {
@@ -111,18 +106,16 @@ export const projects: Project[] = [
     ],
     image: '/images/golf.jpg',
     summary:
-      'A3 Golf Gallery adalah galeri golf indoor dan pusat simulator presisi tinggi di Jakarta. Wakiki menyusun positioning brand eksklusif, arahan konsep kreatif, dan bahasa visual modern yang mencerminkan presisi dan gaya hidup elegan.',
+      'A3 Golf Gallery adalah galeri golf indoor dan pusat simulator presisi tinggi di Jakarta. Wake. Inc menyusun positioning brand eksklusif, arahan konsep kreatif, dan bahasa visual modern yang mencerminkan presisi dan gaya hidup elegan.',
     overview:
       'A3 Golf Gallery dirancang bagi para penikmat golf perkotaan yang mencari tempat berlatih dan bersosialisasi dengan privasi tinggi dan teknologi sensor simulator paling canggih. Brand ini membutuhkan positioning yang tidak hanya berbicara soal olahraga, melainkan tentang craftsmanship, relaksasi, dan keanggunan gaya hidup.',
     challenge:
       'Membedakan diri dari driving range terbuka yang bising dan tempat hiburan golf santai yang kurang memperhatikan presisi teknik. Brand harus memancarkan wibawa dan ketenangan yang memikat para eksekutif dan pegolf serius tanpa terasa intimidatif.',
     approach:
       'Kami menyusun bahasa visual minimalis monokromatik dengan aksen detail logam dan tekstur bersih. Mengambil inspirasi dari sudut presisi club head stik golf, tipografi Space Grotesk yang tajam, serta layout editorial yang hening dan tertata. Setiap materi promosi dan komunikasi ruang dirancang untuk menyampaikan rasa fokus, ketenangan, dan kemewahan yang subtil.',
-    result:
-      'A3 Golf Gallery berhasil membuka pintunya dengan status reputasi tinggi di komunitas golf Jakarta, membukukan tingkat keanggotaan privat penuh pada tiga bulan pertama peluncuran, serta menjadi rujukan standar fasilitas indoor golf di ibu kota.',
     quote: {
       text: 'Presisi bukan sekadar angka pada layar sensor; ia adalah seni mengendalikan fokus dalam ruang yang tenang.',
-      author: 'Wakiki Creative Notes',
+      author: 'Wake. Inc Creative Notes',
     },
   },
   {
@@ -152,11 +145,9 @@ export const projects: Project[] = [
       'Banyak promosi destinasi wisata terjebak dalam visual kartu pos konvensional. Tantangannya adalah menangkap kedalaman emosional, spiritualitas ruang alam nusantara, dan interaksi manusia yang autentik tanpa kehilangan daya tarik kemegahannya.',
     approach:
       'Kami menerapkan teknik dokumenter berstandar internasional dengan pencahayaan alami dramatis dan framing humanis. Setiap sudut visual dikurasi untuk mengajak penonton merasakan atmosfer, aroma, dan keagungan tempat yang mereka lihat.',
-    result:
-      'Materi kampanye dan arsip visual digunakan dalam berbagai showcase promosi internasional, memperkuat citra destinasi Indonesia sebagai pilihan perjalanan bernilai tinggi dan berkesan mendalam.',
     quote: {
       text: 'Keindahan sejati bukan sekadar panorama yang dilihat mata, melainkan keheningan dan kekaguman yang menetap di dalam hati.',
-      author: 'Wakiki Creative Notes',
+      author: 'Wake. Inc Creative Notes',
     },
   },
   {
@@ -179,18 +170,16 @@ export const projects: Project[] = [
     ],
     image: '/images/mata-air.jpg',
     summary:
-      'Mata Air adalah penyedia layanan premium car care dan detailing modern. Wakiki merestrukturisasi identitas visual dan alur pengalaman pelanggan guna menegaskan standar presisi dan kebersihan tingkat tinggi.',
+      'Mata Air adalah penyedia layanan premium car care dan detailing modern. Wake. Inc merestrukturisasi identitas visual dan alur pengalaman pelanggan guna menegaskan standar presisi dan kebersihan tingkat tinggi.',
     overview:
       'Mata Air Auto Care hadir untuk menjawab kebutuhan para pemilik kendaraan yang menginginkan perawatan otomotif dengan ketelitian craftsmanship layaknya salon kecantikan mewah bagi mobil. Brand memerlukan repositioning dari sekadar tempat cuci mobil menjadi studio perawatan kendaraan bereputasi tinggi.',
     challenge:
       'Industri car wash lokal kerap diidentikkan dengan tempat yang basah, kotor, dan bising. Tantangan kami adalah mendefinisikan ulang impresi bengkel perawatan menjadi ruang yang bersih, elegan, dan menenangkan, dengan standar estetika monokromatik kontemporer.',
     approach:
       'Kami merancang sistem visual berbasis tipografi presisi, palet warna dingin yang higienis, serta tata ruang beraksen pencahayaan tajam yang menonjolkan pantulan kilau cat kendaraan. Setiap titik sentuh pelanggan—mulai dari ruang tunggu hingga seragam teknisi—dikurasi dengan standar hospitality.',
-    result:
-      'Repositioning merek melahirkan lonjakan retensi pelanggan premium hingga 75% serta menjadikan Mata Air sebagai destinasi perawatan otomotif paling bergengsi di kawasan Medan.',
     quote: {
       text: 'Kilau yang sempurna adalah pantulan dari perhatian penuh pada detail terkecil.',
-      author: 'Wakiki Creative Notes',
+      author: 'Wake. Inc Creative Notes',
     },
   },
   {
@@ -213,18 +202,16 @@ export const projects: Project[] = [
     ],
     image: '/images/hiru-koffee.jpg',
     summary:
-      'Hiru Koffee merupakan kedai kopi artisanal dan ruang berkarya komunal. Wakiki merancang keseluruhan arah merek, bahasa visual ruang, dan strategi komunikasi rasa yang hangat dan inklusif.',
+      'Hiru Koffee merupakan kedai kopi artisanal dan ruang berkarya komunal. Wake. Inc merancang keseluruhan arah merek, bahasa visual ruang, dan strategi komunikasi rasa yang hangat dan inklusif.',
     overview:
       'Hiru Koffee didirikan sebagai titik temu bagi para kreator, profesional, dan penikmat kopi spesialti. Di tengah maraknya kedai kopi modern, Hiru Koffee memerlukan fondasi merek yang kuat agar tidak sekadar menjadi tren sesaat, melainkan tempat yang memiliki keterikatan emosional mendalam dengan komunitasnya.',
     challenge:
       'Menyeimbangkan kesan kepakaran kopi yang serius dengan atmosfer ruang yang ramah dan mudah didekati bagi siapa saja yang ingin bersantai atau bekerja produktif.',
     approach:
       'Kami mengembangkan konsep "Thoughtful Space, Crafted Cup". Identitas visual memadukan garis arsitektural minimalis dengan nuansa earth-tone hangat. Kami mengarahkan desain kemasan beans, elemen signage kayu dan akrilik, serta visual media sosial yang mengedepankan cerita di balik setiap biji kopi.',
-    result:
-      'Hiru Koffee sukses membuka pintunya dengan sambutan hangat komunitas lokal, mencatat penjualan biji kopi sangrai yang melampaui target bulanan, dan menjadi rujukan lifestyle café di kota Medan.',
     quote: {
       text: 'Kopi yang baik menghubungkan pikiran, tetapi ruang yang tepat menghubungkan manusia.',
-      author: 'Wakiki Creative Notes',
+      author: 'Wake. Inc Creative Notes',
     },
   },
 ]
